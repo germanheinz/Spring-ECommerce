@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="214b8303-22af-44f1-971b-029684accf38" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="209" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Arquillian JUnit Test Class" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RefactorUpload" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1RsdqBsuytEqZxbPXWn9Xt4Gw3a" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="LombokPluginEnabledInProject" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.springbootangular.api.service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\German\Desktop\Java\Spring_Angular\src\main\resources" />
+      <recent name="C:\Users\German\Desktop\Java\Spring_Angular\src\main\resources\static\images" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.springbootangular.api.bootstrap" />
+      <recent name="com.springbootangular.api.model" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\German\Desktop\Java\Spring_Angular\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ApiApplication">
+    <configuration name="ApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.springbootangular.api.ApiApplication" />
+      <module name="Spring_Angular" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springbootangular.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_Angular" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springbootangular.api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.springbootangular.api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.springbootangular.api.service.ClienteServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteServiceImplTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_Angular" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springbootangular.api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.springbootangular.api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.springbootangular.api.service.ClienteServiceImplTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteServiceImplTest.saveCustomerByDTO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_Angular" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springbootangular.api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.springbootangular.api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.springbootangular.api.service.ClienteServiceImplTest" />
+      <option name="METHOD_NAME" value="saveCustomerByDTO" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.springbootangular.api.domain in Spring_Angular" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_Angular" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springbootangular.api.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.springbootangular.api.domain" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Spring_Angular" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.springbootangular.api.ApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ApiApplication" />
+        <item itemvalue="JUnit.ClienteServiceImplTest" />
+        <item itemvalue="JUnit.com.springbootangular.api.domain in Spring_Angular" />
+        <item itemvalue="JUnit.ClienteServiceImplTest.delete" />
+        <item itemvalue="JUnit.ClienteServiceImplTest.saveCustomerByDTO" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="214b8303-22af-44f1-971b-029684accf38" name="Default Changelist" comment="" />
+      <created>1570459925363</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570459925363</updated>
+      <workItem from="1570459930144" duration="10980000" />
+      <workItem from="1570610349741" duration="6043000" />
+      <workItem from="1570618277243" duration="612000" />
+      <workItem from="1570626026394" duration="6780000" />
+      <workItem from="1570704549526" duration="2476000" />
+      <workItem from="1570709881283" duration="2162000" />
+      <workItem from="1570718995756" duration="4618000" />
+      <workItem from="1570780249896" duration="10621000" />
+      <workItem from="1571046374414" duration="1565000" />
+      <workItem from="1571074404669" duration="2562000" />
+      <workItem from="1571127865501" duration="7614000" />
+      <workItem from="1571234887919" duration="6094000" />
+      <workItem from="1571300260137" duration="15842000" />
+      <workItem from="1571665070473" duration="1375000" />
+      <workItem from="1571839640088" duration="693000" />
+      <workItem from="1571907238693" duration="13536000" />
+      <workItem from="1572000532629" duration="2919000" />
+      <workItem from="1572258078210" duration="3227000" />
+      <workItem from="1572281332722" duration="1513000" />
+      <workItem from="1572364060079" duration="222000" />
+      <workItem from="1572515880866" duration="658000" />
+      <workItem from="1572877349397" duration="1747000" />
+      <workItem from="1574413525671" duration="834000" />
+      <workItem from="1576615792028" duration="532000" />
+      <workItem from="1576703542891" duration="1921000" />
+      <workItem from="1576762332805" duration="2410000" />
+    </task>
+    <task id="LOCAL-00001" summary="Controller - &#10;Service -&#10;CLiente DAO -">
+      <created>1570462959556</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570462959556</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Cors">
+      <created>1570463474585</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570463474585</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Base de Datos (Bootstrap)&#10;MapStruct&#10;Modelo DTO&#10;-Test-">
+      <created>1570480631820</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570480631820</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Base de Datos (Bootstrap)&#10;MapStruct&#10;Modelo DTO&#10;-Test-">
+      <created>1570480725257</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570480725257</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Base de Datos (Bootstrap)&#10;MapStruct&#10;Modelo DTO&#10;-Test-">
+      <created>1570480933617</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570480933617</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ClienteController - ok -&#10;ClienteServiceImpl -Test-">
+      <created>1570615693571</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570615693571</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Controller - Manejo de Errores">
+      <created>1570630787935</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1570630787935</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Controller -">
+      <created>1570724746600</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1570724746620</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Manejo de Errores en Post Cliente">
+      <created>1570783705428</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1570783705428</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Manejo de Errores en Post Cliente">
+      <created>1570786250550</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1570786250550</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Paginacion Cliente">
+      <created>1570806117546</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1570806117546</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Upload Imagenes Cliente">
+      <created>1571076952837</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1571076952838</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Upload Imagenes Cliente Completo">
+      <created>1571129458405</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1571129458406</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Implementando Spring Security al Projecto">
+      <created>1571236846983</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1571236846984</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Implementando Spring Security al Projecto">
+      <created>1571240825661</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1571240825661</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Implementando Spring Security al Projecto">
+      <created>1571240959283</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1571240959283</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Implementando Spring Security al Projecto&#10;&#10;**Info Adicional en JWT">
+      <created>1571313570290</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1571313570291</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Implementando Spring Security al Projecto&#10;&#10;**Info Adicional en JWT">
+      <created>1571323337497</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1571323337497</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Implementando Spring Security al Projecto&#10;&#10;**Info Adicional en JWT**&#10;&#10;Cambio .antMatcher por anotaciones">
+      <created>1571323883867</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1571323883867</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Implementando Spring Security al Projecto&#10;&#10;**Configuración Cors***">
+      <created>1571324744644</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1571324744644</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Facturas Model - Comienzo">
+      <created>1571941263980</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1571941263980</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Facturas Controller - Repository - Service">
+      <created>1572005366340</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1572005366341</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Backend OK">
+      <created>1572283836784</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1572283836784</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="range">
+                    <value>
+                      <list>
+                        <option value="HEAD..origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Controller - &#10;Service -&#10;CLiente DAO -" />
+    <MESSAGE value="Cors" />
+    <MESSAGE value="Base de Datos (Bootstrap)&#10;MapStruct&#10;Modelo DTO&#10;-Test-" />
+    <MESSAGE value="ClienteController - ok -&#10;ClienteServiceImpl -Test-" />
+    <MESSAGE value="Controller - Manejo de Errores" />
+    <MESSAGE value="Controller -" />
+    <MESSAGE value="Manejo de Errores en Post Cliente" />
+    <MESSAGE value="Paginacion Cliente" />
+    <MESSAGE value="Upload Imagenes Cliente" />
+    <MESSAGE value="Upload Imagenes Cliente Completo" />
+    <MESSAGE value="Implementando Spring Security al Projecto" />
+    <MESSAGE value="Implementando Spring Security al Projecto&#10;&#10;**Info Adicional en JWT" />
+    <MESSAGE value="Implementando Spring Security al Projecto&#10;&#10;**Info Adicional en JWT**&#10;&#10;Cambio .antMatcher por anotaciones" />
+    <MESSAGE value="Implementando Spring Security al Projecto&#10;&#10;**Configuración Cors***" />
+    <MESSAGE value="Facturas Model - Comienzo" />
+    <MESSAGE value="Facturas Controller - Repository - Service" />
+    <MESSAGE value="Backend OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backend OK" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="0" key="#Project_Structure" timestamp="1576704642626">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1576704642626" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576703081086">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1576703081086" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576704095560">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1576704095560" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1576778557959">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1576778557959" />
+    <state width="1237" height="154" key="GridCell.Tab.0.bottom" timestamp="1576704709633">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="154" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1576704709633" />
+    <state width="1237" height="154" key="GridCell.Tab.0.center" timestamp="1576704709632">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="154" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1576704709632" />
+    <state width="1237" height="154" key="GridCell.Tab.0.left" timestamp="1576704709632">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="154" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1576704709632" />
+    <state width="1237" height="154" key="GridCell.Tab.0.right" timestamp="1576704709632">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="154" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1576704709632" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1575878194638">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1575878194638" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1576177833677">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1576177833677" />
+    <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1576777492462">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="336" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1576777492462" />
+    <state x="91" y="0" key="new project wizard" timestamp="1576700529453">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1576700529453" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1576684170815">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1576684170815" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/api$com_springbootangular_api_domain_in_Spring_Angular.ic" NAME="com.springbootangular.api.domain in Spring_Angular Coverage Results" MODIFIED="1571926397307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.springbootangular.api.domain.*</FILTER>
+    </SUITE>
+  </component>
+</project>
