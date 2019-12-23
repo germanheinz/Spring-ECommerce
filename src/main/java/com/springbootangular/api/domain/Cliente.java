@@ -3,6 +3,7 @@ package com.springbootangular.api.domain;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
+
 import javax.persistence.*;
 import javax.swing.plaf.synth.Region;
 import javax.validation.constraints.Email;
@@ -45,12 +46,6 @@ public class Cliente implements Serializable {
     private Date createAt;
 
     private String foto;
-
-    @NotNull(message = "El campo region, no puede estar vacio")
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "region_id")
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    private Region region;
 
     @JsonIgnoreProperties(value={"cliente", "hibernateLazyInitializer", "handler"}, allowSetters=true)
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "cliente", cascade = CascadeType.ALL)
