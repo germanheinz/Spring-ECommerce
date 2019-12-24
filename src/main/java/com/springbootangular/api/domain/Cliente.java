@@ -47,6 +47,8 @@ public class Cliente implements Serializable {
 
     private String foto;
 
+
+    // Cuando tenemos relaciones bidireccionales se producira un loop, con esta anotacion evitamos este loop sacandolo del JSON
     @JsonIgnoreProperties(value={"cliente", "hibernateLazyInitializer", "handler"}, allowSetters=true)
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "cliente", cascade = CascadeType.ALL)
     private List<Factura> facturas;
