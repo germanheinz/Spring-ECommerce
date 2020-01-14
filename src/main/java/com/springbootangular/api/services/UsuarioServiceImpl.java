@@ -33,7 +33,6 @@ public class UsuarioServiceImpl implements UserDetailsService, UsuarioService {
 
     private Logger logger = LoggerFactory.getLogger(UsuarioServiceImpl.class);
 
-
     private final UsuarioMapper usuarioMapper;
     private final UsuarioRepository usuarioRepository;
 

@@ -2,6 +2,7 @@ package com.springbootangular.api.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
@@ -33,8 +34,8 @@ public class SwaggerConfig {
                 "heinz.german@gmail.com");
 
         return new ApiInfo(
-                "Spring Security - German Heinz",
-                "Making Apis more safeties with Spring Security JWT",
+                "Spring Ecommerce / Angular 8 - German Heinz",
+                "Demo - Ecommerce made it with Spring",
                 "1.0",
                 "",
                 contact,
@@ -44,14 +45,13 @@ public class SwaggerConfig {
     }
 
 //    Si tengo problemas con la visualizacion de Swagger UI
-//    @Override
-//    protected void addResourceHandlers(ResourceHandlerRegistry registry) {
-//        registry.addResourceHandler("swagger-ui.html")
-//                .addResourceLocations("classpath:/META-INF/resources/");
-//
-//        registry.addResourceHandler("/webjars/**")
-//                .addResourceLocations("classpath:/META-INF/resources/webjars/");
-//    }
+    protected void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("swagger-ui.html")
+                .addResourceLocations("classpath:/META-INF/resources/");
+
+        registry.addResourceHandler("/webjars/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/");
+    }
 
 
 }

@@ -3,6 +3,7 @@ package com.springbootangular.api.controller;
 
 import com.springbootangular.api.services.ClienteService;
 import com.springbootangular.api.v1.model.ClienteDTO;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.domain.Page;
@@ -13,12 +14,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.annotations.ApiIgnore;
 
 import javax.validation.Valid;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
 
 @RestController
 @CrossOrigin(origins = {"http://localhost:4200"})
@@ -32,12 +35,14 @@ public class ClienteController {
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "This will get a list of customers.", notes = "These are some notes about the API.")
     public List<ClienteDTO> getListCustomers() {
         return clienteService.findAll();
     }
 
     @GetMapping({"page/{page}"})
     @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "This will get a list of customers.", notes = "These are some notes about the API.")
     public Page<ClienteDTO> getListCustomers(@PathVariable Integer page) {
         Pageable pageable = PageRequest.of(page, 5);
         return clienteService.findAll(pageable);
@@ -45,6 +50,7 @@ public class ClienteController {
     @Secured({"ROLE_ADMIN","ROLE_USER"})
     @GetMapping({"/{id}"})
     @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "This will get a list of customers.", notes = "These are some notes about the API.")
     public ClienteDTO getCustomerById(@PathVariable Long id) {
         return clienteService.findById(id);
     }
@@ -54,10 +60,11 @@ public class ClienteController {
      * se hace un condicional para obtenerlos en caso de que hubiesen
      *
      * */
-    //@Secured({"ROLE_ADMIN"})
+    @Secured({"ROLE_ADMIN"})
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<?> createdCustomer(@Valid @RequestBody ClienteDTO clienteDTO, BindingResult result) {
+    @ApiOperation(value = "This will get a list of customers.", notes = "These are some notes about the API.")
+    public ResponseEntity<?> createCustomer(@Valid @RequestBody ClienteDTO clienteDTO, BindingResult result) {
         Map<String, Object> response = hasErrors(result);
         if(response.containsKey("errors")){
             return new ResponseEntity<Map<String, Object>>(response, HttpStatus.BAD_REQUEST);
@@ -75,6 +82,7 @@ public class ClienteController {
     @Secured({"ROLE_ADMIN"})
     @PutMapping({"/{id}"})
     @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "Service to update Customers", notes = "This service, Updates Customers")
     public ResponseEntity<?> updateCustomer(@Valid @RequestBody ClienteDTO clienteDTO, @PathVariable Long id, BindingResult result) {
         ClienteDTO cliente = clienteService.findById(id);
         ClienteDTO clienteUpdated = null;
@@ -97,7 +105,6 @@ public class ClienteController {
         response.put("cliente", clienteUpdated);
         return new ResponseEntity<Map<String, Object>>(response, HttpStatus.CREATED);
     }
-
     private Map<String, Object> hasErrors(BindingResult result){
         ClienteDTO clienteNew = null;
         Map<String, Object> response = new HashMap<>();

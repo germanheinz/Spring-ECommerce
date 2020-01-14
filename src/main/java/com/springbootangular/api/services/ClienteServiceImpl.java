@@ -6,6 +6,7 @@ import com.springbootangular.api.domain.Factura;
 import com.springbootangular.api.domain.Producto;
 import com.springbootangular.api.repositories.ClienteRepository;
 import com.springbootangular.api.repositories.FacturaRepository;
+import com.springbootangular.api.repositories.ProductoRepository;
 import com.springbootangular.api.v1.mapper.ClienteMapper;
 import com.springbootangular.api.v1.mapper.FacturaMapper;
 import com.springbootangular.api.v1.model.ClienteDTO;
@@ -13,23 +14,32 @@ import com.springbootangular.api.v1.model.FacturaDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class ClienteServiceImpl implements ClienteService {
 
-    @Autowired
     public ClienteRepository clienteRepository;
 
-    @Autowired
     public FacturaRepository facturaRepository;
 
-    @Autowired
+    public ProductoRepository productoRepository;
+
     public ClienteMapper clienteMapper;
 
-    @Autowired
     public FacturaMapper facturaMapper;
+
+    public ClienteServiceImpl(ClienteRepository clienteRepository, FacturaRepository facturaRepository, ProductoRepository productoRepository, ClienteMapper clienteMapper, FacturaMapper facturaMapper) {
+        this.clienteRepository = clienteRepository;
+        this.facturaRepository = facturaRepository;
+        this.productoRepository = productoRepository;
+        this.clienteMapper = clienteMapper;
+        this.facturaMapper = facturaMapper;
+    }
 
     @Override
     public List<ClienteDTO> findAll() {
@@ -103,15 +113,15 @@ public class ClienteServiceImpl implements ClienteService {
         return saveFacturaAndReturnDTO(factura);
     }
 
-
-
     @Override
+    @Transactional
     public void deleteFacturaById(Long id) {
         facturaRepository.deleteById(id);
     }
 
     @Override
+    @Transactional
     public List<Producto> findByNombre(String term) {
-        return null;
+        return productoRepository.findByNombre(term);
     }
 }

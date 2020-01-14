@@ -46,6 +46,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .anyRequest()
                 .authenticated()
                 .and().cors().configurationSource(corsConfigurationSource());
+                http.authorizeRequests().anyRequest().permitAll();
+                http.csrf().disable();
     }
 
     @Bean

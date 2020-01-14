@@ -1,5 +1,7 @@
 package com.springbootangular.api.auth;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -13,6 +15,7 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.token.TokenEnhancerChain;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
+import springfox.documentation.annotations.ApiIgnore;
 
 import java.util.Arrays;
 
@@ -37,6 +40,8 @@ import java.util.Arrays;
 //Configuracion para OATH
 @Configuration
 @EnableAuthorizationServer
+@Api
+@ApiIgnore
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
 
     @Autowired
@@ -55,6 +60,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     *     Recap - Primero genera el token cuando se autentica. Segundo valida/chequea el token
     * */
     @Override
+    @ApiOperation(hidden = true, value = "test")
     public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
         security.tokenKeyAccess("permiteAll()")
                 .checkTokenAccess("isAuthenticated()");

@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = {"http:localhost:4200"})
 @RestController
-@RequestMapping(ClienteController.BASE_URL)
+@CrossOrigin(origins = {"http:localhost:4200"})
+//@RequestMapping(ClienteController.BASE_URL)
 public class FacturaController {
 
     private ClienteService clienteService;
@@ -22,22 +22,22 @@ public class FacturaController {
 
     @GetMapping("/factura/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public FacturaDTO show(@PathVariable Long id){
+    public FacturaDTO getFacturaById(@PathVariable Long id){
         return clienteService.findFacturaById(id);
+    }
+
+    @GetMapping("/factura/filter-productos/{term}")
+    public List<Producto> filtrarProductos(@PathVariable String term){
+        return clienteService.findByNombre(term);
     }
 
     @DeleteMapping("factura/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable Long id){clienteService.deleteFacturaById(id);
     }
-     @GetMapping("/factura/filter-productos/{term}")
-    public List<Producto> filtrarProductos(@PathVariable String term){
-        return clienteService.findByNombre(term);
-     }
-
-     @PostMapping("/facturas")
-     @ResponseStatus(HttpStatus.CREATED)
-     public FacturaDTO crear(@RequestBody FacturaDTO facturaDTO){
+    @PostMapping("/facturas")
+    @ResponseStatus(HttpStatus.CREATED)
+    public FacturaDTO createFactura(@RequestBody FacturaDTO facturaDTO){
         return clienteService.saveFactura(facturaDTO);
-     }
+    }
 }
