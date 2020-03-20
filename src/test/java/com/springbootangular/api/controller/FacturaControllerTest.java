@@ -46,7 +46,7 @@ class FacturaControllerTest {
 
         Factura factura = new Factura();
         factura.setId(1l);
-        factura.setCreateAt(date);
+        factura.setCreateAt("12/12/2020");
         factura.setDescripcion("test");
         factura.setObservacion("test");
 

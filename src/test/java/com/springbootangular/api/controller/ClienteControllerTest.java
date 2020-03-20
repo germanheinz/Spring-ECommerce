@@ -128,7 +128,7 @@ class ClienteControllerTest {
 
         mockMvc.perform(post("/api/clientes/create")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(AbstractRestController.asJsonString(customerDTO)))
+                .content(guru.springfamework.controllers.v1.AbstractRestController.asJsonString(customerDTO)))
                 .andExpect(status().isOk());
                 //.andExpect(jsonPath("$.firstName", equalTo("test")))
     }
@@ -150,7 +150,7 @@ class ClienteControllerTest {
         //when/then
         mockMvc.perform(put( "/api/clientes/1")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(AbstractRestController.asJsonString(returnDTO))) //ver si ira DTO
+                .content(guru.springfamework.controllers.v1.AbstractRestController.asJsonString(returnDTO))) //ver si ira DTO
                 .andExpect(status().isNotFound());
                 /*.andExpect(jsonPath("$.firstname", Matchers.equalTo("Fred")))
                 .andExpect(jsonPath("$.lastname", Matchers.equalTo("Flintstone")))
