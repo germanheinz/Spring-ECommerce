@@ -63,7 +63,7 @@ public class ClienteController {
     @Secured({"ROLE_ADMIN"})
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
-    @ApiOperation(value = "This will get a list of customers.", notes = "These are some notes about the API.")
+    @ApiOperation(value = "This will create a customers.", notes = "These are some notes about the API.")
     public ResponseEntity<?> createCustomer(@Valid @RequestBody ClienteDTO clienteDTO, BindingResult result) {
         Map<String, Object> response = hasErrors(result);
         if(response.containsKey("errors")){
@@ -104,6 +104,13 @@ public class ClienteController {
         response.put("mensaje", "El cliente actualizado con exito");
         response.put("cliente", clienteUpdated);
         return new ResponseEntity<Map<String, Object>>(response, HttpStatus.CREATED);
+    }
+    @Secured({"ROLE_ADMIN"})
+    @DeleteMapping({"/{id}"})
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "Service to Delete Customers", notes = "This service, Updates Customers")
+    public void deleteCustomer(@PathVariable Long id){
+       clienteService.deleteCustomerById(id);
     }
     private Map<String, Object> hasErrors(BindingResult result){
         ClienteDTO clienteNew = null;
