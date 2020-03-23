@@ -16,4 +16,5 @@ public class ClienteDTO {
     private String apellido;
     private String email;
     private Date createAt;
+    private String foto;
 }

@@ -1,22 +1,30 @@
 package com.springbootangular.api.controller;
 
 
+import com.springbootangular.api.domain.Cliente;
 import com.springbootangular.api.services.ClienteService;
+import com.springbootangular.api.services.UploadFile;
 import com.springbootangular.api.v1.model.ClienteDTO;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.lang.NonNull;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import springfox.documentation.annotations.ApiIgnore;
 
 import javax.validation.Valid;
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -29,6 +37,9 @@ import java.util.stream.Collectors;
 public class ClienteController {
 
     public static final String BASE_URL = "/api/clientes";
+
+    @Autowired
+    public UploadFile uploadFile;
 
     @Autowired
     public ClienteService clienteService;
@@ -125,5 +136,57 @@ public class ClienteController {
         }
         response.put("ok", HttpStatus.OK);
         return response;
+    }
+    @Secured({"ROLE_ADMIN", "ROLE_USER"})
+    @PostMapping("/upload")
+    public ResponseEntity<?> upload(@RequestParam("archivo") MultipartFile archivo, @RequestParam("id") Long id){
+        Map<String, Object> response = new HashMap<>();
+
+        ClienteDTO cliente = clienteService.findById(id);
+
+        if(!archivo.isEmpty()) {
+
+            String nombreArchivo = null;
+            try {
+                nombreArchivo = uploadFile.copiar(archivo);
+            } catch (IOException e) {
+                response.put("mensaje", "Error al subir la imagen del cliente");
+                response.put("error", e.getMessage().concat(": ").concat(e.getCause().getMessage()));
+                return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+            }
+
+            String nombreFotoAnterior = cliente.getFoto();
+
+            uploadFile.eliminar(nombreFotoAnterior);
+
+            cliente.setFoto(nombreArchivo);
+
+            clienteService.save(cliente);
+
+            response.put("cliente", cliente);
+            response.put("mensaje", "Has subido correctamente la imagen: " + nombreArchivo);
+
+        }
+
+        return new ResponseEntity<Map<String, Object>>(response, HttpStatus.CREATED);
+    }
+
+        //-------Metodo para descargar la Imagen-------------//
+
+    @GetMapping("/uploads/img/{nombreFoto:.+}")
+    public ResponseEntity<Resource> getPhotoCustomer(@PathVariable String nombreFoto){
+
+        Resource recurso = null;
+
+        try {
+            recurso = uploadFile.cargar(nombreFoto);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+        HttpHeaders cabecera = new HttpHeaders();
+        cabecera.add(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + recurso.getFilename() + "\"");
+
+        return new ResponseEntity<Resource>(recurso, cabecera, HttpStatus.OK);
     }
 }

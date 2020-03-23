@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214b8303-22af-44f1-971b-029684accf38" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/services/UploadFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/services/UploadFileImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring_Security/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/controller/RestResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/controller/RestResponseEntityExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/domain/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/domain/Factura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/services/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/services/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/controller/ClienteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/v1/model/ClienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/v1/model/ClienteDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/springbootangular/api/controller/ClienteControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springbootangular/api/controller/ClienteControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/springbootangular/api/controller/FacturaControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springbootangular/api/controller/FacturaControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/springbootangular/api/auth/AuthorizationServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springbootangular/api/auth/AuthorizationServerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/springbootangular/api/auth/ResourceServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springbootangular/api/auth/ResourceServerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/springbootangular/api/auth/SpringSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springbootangular/api/auth/SpringSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/springbootangular/api/config/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springbootangular/api/config/SwaggerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/springbootangular/api/services/UsuarioServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springbootangular/api/services/UsuarioServiceImpl.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +69,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/images" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19625" />
@@ -96,12 +83,14 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gheinz\Desktop\Proyectos\Spring-ECommerce\src\main\java\com\springbootangular\api\domain" />
+      <recent name="C:\Users\gheinz\Desktop\Proyectos\Spring_Security\src\main\java\com\springbootangular\api" />
+      <recent name="C:\Users\German\Desktop\Java\Spring_Angular\src\main\resources" />
+      <recent name="C:\Users\German\Desktop\Java\Spring_Angular\src\main\resources\static\images" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.springbootangular.api" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\gheinz\Desktop\Proyectos\Spring-Security\src\main\resources" />
-      <recent name="C:\Users\German\Desktop\Java\Spring_Angular\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.springbootangular.api.domain" />
@@ -110,11 +99,11 @@
       <recent name="com.springbootangular.api.bootstrap" />
       <recent name="com.springbootangular.api.model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gheinz\Desktop\Proyectos\Spring-ECommerce\src\main\java\com\springbootangular\api\domain" />
-      <recent name="C:\Users\gheinz\Desktop\Proyectos\Spring_Security\src\main\java\com\springbootangular\api" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\German\Desktop\Java\Spring-ECommerce\src\main\resources\static\images" />
+      <recent name="C:\Users\German\Desktop\Java\Spring-ECommerce\src\main\java\com\springbootangular\api\services" />
+      <recent name="C:\Users\gheinz\Desktop\Proyectos\Spring-Security\src\main\resources" />
       <recent name="C:\Users\German\Desktop\Java\Spring_Angular\src\main\resources" />
-      <recent name="C:\Users\German\Desktop\Java\Spring_Angular\src\main\resources\static\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -285,7 +274,10 @@
       <workItem from="1584377167411" duration="1014000" />
       <workItem from="1584378241136" duration="4949000" />
       <workItem from="1584448932675" duration="1276000" />
-      <workItem from="1584706854491" duration="7318000" />
+      <workItem from="1584706854491" duration="8879000" />
+      <workItem from="1584885450195" duration="5254000" />
+      <workItem from="1584958314264" duration="1271000" />
+      <workItem from="1584961962806" duration="7638000" />
     </task>
     <task id="LOCAL-00001" summary="Controller - &#10;Service -&#10;CLiente DAO -">
       <created>1570462959556</created>
