@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214b8303-22af-44f1-971b-029684accf38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/services/UploadFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/services/UploadFileImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/controller/FacturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/controller/FacturaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/domain/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/domain/Factura.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/v1/model/ClienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/v1/model/ClienteDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/springbootangular/api/controller/FacturaControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springbootangular/api/controller/FacturaControllerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -277,7 +275,7 @@
       <workItem from="1584706854491" duration="8879000" />
       <workItem from="1584885450195" duration="5254000" />
       <workItem from="1584958314264" duration="1271000" />
-      <workItem from="1584961962806" duration="7638000" />
+      <workItem from="1584961962806" duration="13808000" />
     </task>
     <task id="LOCAL-00001" summary="Controller - &#10;Service -&#10;CLiente DAO -">
       <created>1570462959556</created>

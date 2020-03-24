@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = {"http:localhost:4200"})
-//@RequestMapping(ClienteController.BASE_URL)
+@RequestMapping(ClienteController.BASE_URL)
 public class FacturaController {
 
     private ClienteService clienteService;
@@ -26,7 +26,7 @@ public class FacturaController {
         return clienteService.findFacturaById(id);
     }
 
-    @GetMapping("/factura/filter-productos/{term}")
+    @GetMapping("/factura/products/find/{term}")
     public List<Producto> filtrarProductos(@PathVariable String term){
         return clienteService.findByNombre(term);
     }
