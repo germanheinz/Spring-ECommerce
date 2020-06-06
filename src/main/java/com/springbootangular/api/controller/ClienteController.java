@@ -1,7 +1,5 @@
 package com.springbootangular.api.controller;
 
-
-import com.springbootangular.api.domain.Cliente;
 import com.springbootangular.api.services.ClienteService;
 import com.springbootangular.api.services.UploadFile;
 import com.springbootangular.api.v1.model.ClienteDTO;
@@ -15,12 +13,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.lang.NonNull;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import springfox.documentation.annotations.ApiIgnore;
 
 import javax.validation.Valid;
 import java.io.IOException;
@@ -58,6 +54,7 @@ public class ClienteController {
         Pageable pageable = PageRequest.of(page, 5);
         return clienteService.findAll(pageable);
     }
+
     @Secured({"ROLE_ADMIN","ROLE_USER"})
     @GetMapping({"/{id}"})
     @ResponseStatus(HttpStatus.OK)
@@ -90,6 +87,7 @@ public class ClienteController {
         response.put("mensaje", "El cliente se ha creado con exito");
         return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
     }
+
     @Secured({"ROLE_ADMIN"})
     @PutMapping({"/{id}"})
     @ResponseStatus(HttpStatus.OK)
@@ -116,6 +114,7 @@ public class ClienteController {
         response.put("cliente", clienteUpdated);
         return new ResponseEntity<Map<String, Object>>(response, HttpStatus.CREATED);
     }
+
     @Secured({"ROLE_ADMIN"})
     @DeleteMapping({"/{id}"})
     @ResponseStatus(HttpStatus.OK)
@@ -123,6 +122,7 @@ public class ClienteController {
     public void deleteCustomer(@PathVariable Long id){
        clienteService.deleteCustomerById(id);
     }
+
     private Map<String, Object> hasErrors(BindingResult result){
         ClienteDTO clienteNew = null;
         Map<String, Object> response = new HashMap<>();
@@ -137,6 +137,7 @@ public class ClienteController {
         response.put("ok", HttpStatus.OK);
         return response;
     }
+
     @Secured({"ROLE_ADMIN", "ROLE_USER"})
     @PostMapping("/upload")
     public ResponseEntity<?> upload(@RequestParam("archivo") MultipartFile archivo, @RequestParam("id") Long id){

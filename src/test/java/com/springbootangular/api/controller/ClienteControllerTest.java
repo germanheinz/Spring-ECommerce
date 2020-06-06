@@ -1,29 +1,20 @@
 package com.springbootangular.api.controller;
 
-import com.springbootangular.api.domain.Cliente;
-import com.springbootangular.api.repositories.ClienteRepository;
+
 import com.springbootangular.api.services.ClienteService;
 import com.springbootangular.api.v1.model.ClienteDTO;
-import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.*;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
-import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.*;
@@ -41,9 +32,6 @@ class ClienteControllerTest {
 
     @InjectMocks
     ClienteController customerController;
-
-    @Mock
-    ClienteRepository customerRepository;
 
     MockMvc mockMvc;
 
@@ -75,6 +63,23 @@ class ClienteControllerTest {
                 .andExpect(jsonPath("$[0].nombre", is("test")))
                 .andExpect(jsonPath("$", hasSize(2)));
     }
+    @Test
+    void getListCustomersWithPage() throws Exception {
+        ClienteDTO customerDTO = new ClienteDTO();
+        customerDTO.setId(1l);
+        customerDTO.setNombre("test");
+        customerDTO.setApellido("test");
+
+        Pageable pageable = PageRequest.of(0, 5);
+
+        Page<ClienteDTO> customersDTO = customerService.findAll(pageable);
+
+        when(customerService.findAll(pageable)).thenReturn(customersDTO);
+
+        mockMvc.perform(get("/api/clientes/page/0").contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
+    }
+
 
     @Test
     void testGetListCustomers() throws Exception{

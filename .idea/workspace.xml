@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="214b8303-22af-44f1-971b-029684accf38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/controller/FacturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/controller/FacturaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/controller/ClienteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/domain/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/domain/Factura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/v1/model/ClienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/v1/model/ClienteDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/springbootangular/api/controller/FacturaControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springbootangular/api/controller/FacturaControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/services/ClienteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/services/ClienteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/v1/model/FacturaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbootangular/api/v1/model/FacturaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/springbootangular/api/controller/ClienteControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springbootangular/api/controller/ClienteControllerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="209" />
+    <option name="myElementSize" value="15" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -67,7 +68,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19625" />
@@ -81,14 +82,14 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gheinz\Desktop\Proyectos\Spring-ECommerce\src\main\java\com\springbootangular\api\domain" />
-      <recent name="C:\Users\gheinz\Desktop\Proyectos\Spring_Security\src\main\java\com\springbootangular\api" />
-      <recent name="C:\Users\German\Desktop\Java\Spring_Angular\src\main\resources" />
-      <recent name="C:\Users\German\Desktop\Java\Spring_Angular\src\main\resources\static\images" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.springbootangular.api" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\German\Desktop\Java\Spring-ECommerce\src\main\resources\static\images" />
+      <recent name="C:\Users\German\Desktop\Java\Spring-ECommerce\src\main\java\com\springbootangular\api\services" />
+      <recent name="C:\Users\gheinz\Desktop\Proyectos\Spring-Security\src\main\resources" />
+      <recent name="C:\Users\German\Desktop\Java\Spring_Angular\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.springbootangular.api.domain" />
@@ -97,11 +98,11 @@
       <recent name="com.springbootangular.api.bootstrap" />
       <recent name="com.springbootangular.api.model" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\German\Desktop\Java\Spring-ECommerce\src\main\resources\static\images" />
-      <recent name="C:\Users\German\Desktop\Java\Spring-ECommerce\src\main\java\com\springbootangular\api\services" />
-      <recent name="C:\Users\gheinz\Desktop\Proyectos\Spring-Security\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gheinz\Desktop\Proyectos\Spring-ECommerce\src\main\java\com\springbootangular\api\domain" />
+      <recent name="C:\Users\gheinz\Desktop\Proyectos\Spring_Security\src\main\java\com\springbootangular\api" />
       <recent name="C:\Users\German\Desktop\Java\Spring_Angular\src\main\resources" />
+      <recent name="C:\Users\German\Desktop\Java\Spring_Angular\src\main\resources\static\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -130,6 +131,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ClienteControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springbootangular.api.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.springbootangular.api.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.springbootangular.api.controller.ClienteControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClienteControllerTest.createCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
@@ -146,17 +162,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClienteServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring_Angular" />
+    <configuration name="ClienteControllerTest.getListCustomersWithPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.springbootangular.api.service.*" />
+          <option name="PATTERN" value="com.springbootangular.api.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.springbootangular.api.service" />
-      <option name="MAIN_CLASS_NAME" value="com.springbootangular.api.service.ClienteServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.springbootangular.api.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.springbootangular.api.controller.ClienteControllerTest" />
+      <option name="METHOD_NAME" value="getListCustomersWithPage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,18 +227,20 @@
     <list>
       <item itemvalue="Application.ApiApplication" />
       <item itemvalue="JUnit.ClienteControllerTest.createCustomer" />
-      <item itemvalue="JUnit.ClienteServiceImplTest" />
       <item itemvalue="JUnit.UsuarioServiceImplTest" />
       <item itemvalue="JUnit.UsuarioServiceImplTest.loadUserByUsername" />
       <item itemvalue="Spring Boot.ECommerce" />
       <item itemvalue="Spring Boot.ApiApplication" />
+      <item itemvalue="JUnit.ClienteControllerTest" />
+      <item itemvalue="JUnit.ClienteControllerTest.getListCustomersWithPage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClienteControllerTest" />
+        <item itemvalue="JUnit.ClienteControllerTest.getListCustomersWithPage" />
         <item itemvalue="JUnit.ClienteControllerTest.createCustomer" />
         <item itemvalue="JUnit.UsuarioServiceImplTest.loadUserByUsername" />
         <item itemvalue="JUnit.UsuarioServiceImplTest" />
-        <item itemvalue="JUnit.ClienteServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -276,6 +295,11 @@
       <workItem from="1584885450195" duration="5254000" />
       <workItem from="1584958314264" duration="1271000" />
       <workItem from="1584961962806" duration="13808000" />
+      <workItem from="1587114434689" duration="1110000" />
+      <workItem from="1587129430921" duration="2353000" />
+      <workItem from="1587483502153" duration="18032000" />
+      <workItem from="1588237649703" duration="3878000" />
+      <workItem from="1591448068850" duration="6182000" />
     </task>
     <task id="LOCAL-00001" summary="Controller - &#10;Service -&#10;CLiente DAO -">
       <created>1570462959556</created>
@@ -606,5 +630,10 @@
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1576869654118" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1576684170815" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Spring_eCommerce$ClienteControllerTest.ic" NAME="ClienteControllerTest Coverage Results" MODIFIED="1591449639617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.springbootangular.api.controller.*</FILTER>
+    </SUITE>
   </component>
 </project>

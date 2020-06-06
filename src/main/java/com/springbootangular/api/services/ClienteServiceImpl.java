@@ -102,8 +102,8 @@ public class ClienteServiceImpl implements ClienteService {
 
     private FacturaDTO saveFacturaAndReturnDTO(Factura factura) {
         Factura savedFactura = facturaRepository.save(factura);
-        FacturaDTO returnDto = facturaMapper.facturaToFacturaDTO(savedFactura);
-        return returnDto;
+        FacturaDTO facturaDTO = facturaMapper.facturaToFacturaDTO(savedFactura);
+        return facturaDTO;
     }
 
     @Override
